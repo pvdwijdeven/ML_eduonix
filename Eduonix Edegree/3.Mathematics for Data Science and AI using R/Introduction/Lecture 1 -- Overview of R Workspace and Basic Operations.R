@@ -60,5 +60,5 @@ data.00 %>%
   summarise(mean.mpg.per.cyl = mean(mpg.per.cyl))
 
 #Quick plot
-plot(x = data.00$cyl, y = data.00$mpg, xlab = 'Cylinders', ylab = 'Miles Per Gallon',
-     col = 'red', main = 'MPG by Number of Cylinders')
+plot(x = data.00$disp, y = data.00$mpg, xlab = 'Displacement', ylab = 'Miles Per Gallon',
+     col = 'red', main = 'MPG by Displacement')

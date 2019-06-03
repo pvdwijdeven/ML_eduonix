@@ -14,8 +14,8 @@
 # ------------------------------------------------------------------------
 
 # Plotting a single vector in 2-space
-vecplot_2d <- function(vector, xax, yax, color) {
-  vec <- vector
+vecplot_2d <- function(vec, xax, yax, color) {
+  #vec <- vector
   plot(vec[1], vec[2], type = 'p', col = color,
        xlim = xax, ylim = yax,
        xlab = "", ylab = "")
@@ -25,7 +25,7 @@ vecplot_2d <- function(vector, xax, yax, color) {
 }
 
 ### Apply the function
-vecplot_2d(vector = c(1,2), xax=c(0,5), yax=c(0,5), color = 'red')
+vecplot_2d( c(1,2), c(0,5), c(0,5), 'red')
 
 
 # Plotting a vector in 3-space
@@ -100,6 +100,7 @@ vec.add.plot_2d <- function(vec1, vec2, xax, yax) {
   with(to.plot[-2,], text(to.plot[-2,], labels = point, pos = 4))
 }
 
+
 ### Apply function
 vec.add.plot_2d(vec1 = c(1,2), vec2 = c(3,4), xax=c(0,10), yax=c(0,10))
 
@@ -137,4 +138,5 @@ vec.add.plot_3d <- function(vec1, vec2, xax, yax, zax, phi, theta) {
 
 ### Apply function
 vec.add.plot_3d(vec1=c(1,2,3), vec2=c(4,5,6), xax=c(0,10), yax=c(0,10), zax=c(0,10),
-                phi = 0, theta = 30)
+                phi = 180, theta = 0)
+

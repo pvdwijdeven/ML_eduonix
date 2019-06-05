@@ -3,7 +3,7 @@
 library(tidyverse)
 library(rgl)
 
-data.00 <- read.csv("C:/Users/timyo/Downloads/Baseball2018.csv", header = TRUE, stringsAsFactors = FALSE)
+data.00 <- read.csv("Linear Algebra/Code//Baseball2018.csv", header = TRUE, stringsAsFactors = FALSE)
 data.10 <- data.00 %>%
   select(WinPct, Rdiff, ERA)
 View(data.10)

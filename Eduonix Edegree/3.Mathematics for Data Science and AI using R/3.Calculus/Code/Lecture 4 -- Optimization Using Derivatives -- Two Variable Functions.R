@@ -10,6 +10,7 @@
 library(Deriv)
 
 f <- function(x,y) x^2 + y^2 - 2*x - 6*y + 14
+plot(f)
 f.x <- Deriv(f, x = 'x')
 f.x # 2x - 2
 

@@ -7,6 +7,7 @@
 # -----------------------------------------------
 ##  1. Viewing residuals
 # -----------------------------------------------
+library(tidyverse)
 mod1 <- lm(mpg ~ wt, data = mtcars)
 
 ## Plot actuals and predicted values
@@ -17,6 +18,7 @@ plot(x = mtcars$wt, y = mtcars$mpg, ylim = c(8,30), col = 'blue')
 points(x = mtcars$wt, y = mod1$fitted.values, col = 'red')
 
 ## Plot residuals directly
+summary(mod1$residuals)
 plot(mod1$residuals) # should be no discernible pattern, w/ roughly same number above and below
 abline(h = 0, lty = 3)
 

@@ -33,7 +33,7 @@ tangent.plots(fun = f, pt = 4)
 
 ## add these to a plot of the graph
 plot(f, xlim = c(-5,5), col = 'blue')
-points(x = -4:4, y = c(48,27,12,3,0,3,12,27,48), col = 'red')  ## do -2:2, and then add in 3, and then 4 to show how f' plot builds
+points(x = -4:4, y = c(48,27,12,3,0,3,12,27,48), col = 'red',pch=16)  ## do -2:2, and then add in 3, and then 4 to show how f' plot builds
 
 
 
@@ -70,6 +70,8 @@ f <- function(x,y) x^2 + y^2
 f.x <- Deriv(f, x = 'x') ## partial derivative wrt x
 f.y <- Deriv(f, x = 'y') ## partial derivative wrt y
 
+f.x
+f.y
 library(rgl)
 plot3d(f, xlim = c(-10,10), ylim = c(-10,10), col = 'blue')
 plot3d(f.x, xlim = c(-10,10), ylim = c(-10,10), type = 'p', col = 'red', add = TRUE)

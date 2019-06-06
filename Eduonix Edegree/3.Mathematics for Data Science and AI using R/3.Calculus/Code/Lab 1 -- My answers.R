@@ -38,7 +38,14 @@ fd(2)
 
 f <- function(x) exp(x)
 plot(f, from = -2, to = 2)
-fd <- function(x) 1/x
+fd <- function(x) exp(x)
+fd(-1)
+fd(0)
+fd(2)
+
+f <- function(x) 1/x
+plot(f, from = -2, to = 2)
+fd <- function(x) -1/x^2
 fd(-1)
 fd(0)
 fd(2)

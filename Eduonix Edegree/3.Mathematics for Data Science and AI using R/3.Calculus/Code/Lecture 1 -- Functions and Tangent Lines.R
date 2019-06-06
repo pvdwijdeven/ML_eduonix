@@ -83,7 +83,7 @@ secant.plots <- function(fun, pt) {   ## fun = function; pt = point where sec li
     abline(a = sec.int, b = i, col = 'red')
     text(x1+8, y1-8, labels = paste('Slope:', i, sep = ""))
     text(x1-0.5, y1+0.5, labels = paste('(',x1,',',y1,')'))
-    #ani.pause(interval = 0.5)
+    Sys.sleep(0.030)
   }
 }
 

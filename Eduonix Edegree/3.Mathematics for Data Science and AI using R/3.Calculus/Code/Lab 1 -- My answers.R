@@ -22,3 +22,23 @@ fd(2)
 # if the slopes of the tangent lines will be positive, negative, or zero.
 # 𝑓(𝑥)=𝑥^5, 𝑓(𝑥)=lna(𝑥), 𝑓(𝑥)=𝑒^𝑥, 𝑓(𝑥)=1/𝑥
 
+f <- function(x) x^5
+plot(f, from = -2, to = 2)
+fd <- function(x) 5*x^4
+fd(-1)
+fd(0)
+fd(2)
+
+f <- function(x) log(x)
+plot(f, from = -2, to = 2)
+fd <- function(x) 1/x
+fd(-1)
+fd(0)
+fd(2)
+
+f <- function(x) exp(x)
+plot(f, from = -2, to = 2)
+fd <- function(x) 1/x
+fd(-1)
+fd(0)
+fd(2)

@@ -16,7 +16,7 @@ t(y) %*% X %*% B
 
 
 # 3. Validate the the partial derivatives (-2t(X)y + 2t(X)XB) equal 0
--2*t(X)%*%y + 2*t(X)%*%X%*%B
+-2*t(X) %*% y + 2 * t(X) %*% X %*% B
 
 
 # 4. Fit the model using the lm() function

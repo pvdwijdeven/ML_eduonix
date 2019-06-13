@@ -1,7 +1,7 @@
 # Download the ‘Baseball2018.csv’ data set and load it into R. 
 # (Look up the help for the read.csv() function if needed).
 library(tidyverse)
-Baseball <- read.csv('Linear Algebra/Code/Baseball2018.csv', header = TRUE, sep = ",", dec=".", fill=TRUE, comment.char = "")
+Baseball <- read.csv('2.Linear Algebra/Code/Baseball2018.csv', header = TRUE, sep = ",", dec=".", fill=TRUE, comment.char = "")
 
 # Plot Runs vs. HomeRun and Runs vs. H9. Of HomeRun and H9, 
 # which appears to be more closely related to Runs? Plot Runs vs. HomeRun and H9 in 3-space.
